@@ -4,7 +4,7 @@ from selenium.common.exceptions import NoAlertPresentException
 
 class ProductPage(BasePage):
     def add_to_basket(self):
-        button_basket=self.browser.find_element(*ProductPageLocators.BUTTON_BASKET)  
+        button_basket=self.browser.find_element(*ProductPageLocators.BUTTON_ADD_TO_BASKET)  
         button_basket.click()
 
     def get_product_name(self):
